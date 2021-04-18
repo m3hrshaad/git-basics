@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +12,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+=======
+import { makeStyles, fade } from '@material-ui/core/styles';
+
+const drawerWidth = 0;
+
+// change css 
+
+export default makeStyles((theme) => ({
+    appBar: {
+        boxShadow: 'none',
+        borderButtom: '1px solid rgba(0, 0, 0, 0.12)',
+        [theme.breakpoints.up('sm')]: {
+            width: `calc(100% - ${drawerWidth}px)`,
+            marginLeft: drawerWidth,
+        },
+    },
+    title: {
+        flexGrow: 1,
+        alignItems: 'center',
+        display: 'flex',
+        textDecoration: 'none',
+    },
+    
+    searchIcon: {
+        padding: theme.spacing(0, 2),
+        height: '100%',
+        position: 'absolute',
+        pointerEvents: 'none',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    inputRoot: {
+        color: 'inherit',
+    },
+    inputInput: {
+        color: 'inherit',
+        padding: theme.spacing(1, 1, 1, 0),
+        // vertical padding + font from  searchIcon
+        paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
+        transition: theme.transitions.create('width'),
+        width: '100%',
+        [theme.breakpoints.up('md')]: {
+            width: '20ch',
+        },
+    },
+}));
+>>>>>>> bugfix
