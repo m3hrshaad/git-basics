@@ -9,6 +9,16 @@
         <h1 id="myH1">My Second page</h1>
         <div id="myDiv">THis is some text with an ID</div>
         <script src="ecma.js" type="text/javascript">
+        	,
+        	Modernizr.load([{
+        		load:[]
+        	},
+        	{
+        		test:Modernizr.mq('only all'),
+        		nope: '_scripts/respond.min.js'
+        	}
+
+        	]);
            
         </script>
 
